@@ -1,7 +1,6 @@
 package com.sena.seguridad.Controller;
 
 import java.util.List;
-
 import java.util.Optional;
 
 import org.springframework.http.ResponseEntity;
@@ -13,17 +12,17 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import com.sena.seguridad.DTO.ApiResponseDto;
-import com.sena.seguridad.IService.IbaseService;
 import com.sena.seguridad.Entity.ABaseEntity;
+import com.sena.seguridad.IService.IBaseService;
 
 /**
  * Abstract base controller providing common CRUD endpoints for entities.
  * @param <T> The type of entity extending ABaseEntity.
  * @param <S> The type of service implementing IBaseService for the entity.
  */
-public class ABaseController<T extends ABaseEntity, S extends IbaseService<T>> {
+public class ABaseController<T extends ABaseEntity, S extends IBaseService<T>> {
     
-	protected S service;
+    protected S service;
     protected String entityName;
     
     /**
@@ -112,5 +111,7 @@ public class ABaseController<T extends ABaseEntity, S extends IbaseService<T>> {
         } catch (Exception e) {
             return ResponseEntity.internalServerError().body(new ApiResponseDto<T>(e.getMessage(), null, false));
         }
-    }
+    }  
+    
+    
 }

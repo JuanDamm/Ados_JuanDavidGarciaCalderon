@@ -1,12 +1,19 @@
 package com.sena.seguridad.IService;
 
+import java.util.List;
+
 import java.util.Optional;
 
-import com.sena.seguridad.DTO.UserDto;
+import org.springframework.data.repository.query.Param;
+
+import com.sena.seguridad.DTO.IUserDto;
+import com.sena.seguridad.DTO.IViewDto;
 import com.sena.seguridad.Entity.User;
 
-public interface IUserService extends IbaseService<User> {
+public interface IUserService extends IBaseService<User>{
 
-	// Optional<UserDto> getUserWithViews(String username, String password);
+
+	 
+	 
+
 }
-

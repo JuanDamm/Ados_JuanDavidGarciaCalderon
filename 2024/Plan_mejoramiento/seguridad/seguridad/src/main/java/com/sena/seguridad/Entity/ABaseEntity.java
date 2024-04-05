@@ -10,7 +10,7 @@ import jakarta.persistence.MappedSuperclass;
 
 @MappedSuperclass
 public abstract class ABaseEntity {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;

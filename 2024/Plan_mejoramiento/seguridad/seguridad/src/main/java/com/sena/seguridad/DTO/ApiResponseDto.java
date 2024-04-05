@@ -1,6 +1,5 @@
 package com.sena.seguridad.DTO;
 
-
 /**
  * This class represents a generic API response.
  * @param <T> The type of data contained in the response.

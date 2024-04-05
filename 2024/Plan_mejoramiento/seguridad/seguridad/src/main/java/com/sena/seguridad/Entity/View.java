@@ -6,16 +6,16 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "view")
-public class View extends ABaseEntity{
+public class View  extends ABaseEntity { 
 	
 	@Column(name = "name", length = 50, nullable = false)
-	private String name;
-
-	@Column(name = "route", length = 50, nullable = false)
-	private String route;
-
-	@Column(name = "description", length = 50, nullable = false, unique = true)
-	private String description;
+    private String name;
+    
+    @Column(name = "route", length = 50, nullable = false)
+    private String route;
+    
+    @Column(name = "description", length = 50, nullable = false, unique = true)
+    private String description;
 
 	public String getName() {
 		return name;
@@ -40,6 +40,6 @@ public class View extends ABaseEntity{
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-	
+    
+    
 }

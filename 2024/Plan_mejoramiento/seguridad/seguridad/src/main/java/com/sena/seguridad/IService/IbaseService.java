@@ -4,13 +4,14 @@ import java.util.List;
 
 import java.util.Optional;
 
+import com.sena.seguridad.DTO.IModuleDto;
 import com.sena.seguridad.Entity.ABaseEntity;
 
 /**
  * This interface defines the contract for a generic base service.
  * @param <T> The type of entity extending ABaseEntity.
  */
-public interface IbaseService<T extends ABaseEntity> {
+public interface IBaseService<T extends ABaseEntity> {
 
     /**
      * Retrieves all entities.

@@ -6,12 +6,11 @@ import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.sena.seguridad.DTO.ICityDto;
-import com.sena.seguridad.Entity.City;
+import com.sena.seguridad.DTO.IEmployedDto;
+import com.sena.seguridad.Entity.Employed;
 
 @Repository
-public interface ICityRepository extends IBaseRepository<City, Long> {
+public interface IEmployedRepository extends IBaseRepository<Employed, Long>{
 
-	
 	
 }

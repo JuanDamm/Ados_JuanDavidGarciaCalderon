@@ -1,8 +1,7 @@
 package com.sena.seguridad.DTO;
 
-public interface IRoleDto extends IGenericDto{
-	
+public interface IRoleDto extends IGenericDto {
+
 	String getRole();
-	
 	String getDescription();
 }

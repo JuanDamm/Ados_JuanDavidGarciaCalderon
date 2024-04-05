@@ -11,38 +11,70 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "person")
-public class Person extends ABaseEntity{
-	@Column(name = "name", length = 100, nullable = false)
-	private String name;
-	
-	@Column(name = "email", length = 100, nullable = false)
-	private String email;
-
-	@Column(name = "phone", length = 100, nullable = false)
-	private String phone;
-	
-	@Column(name = "birth", length = 100, nullable = false)
-	private LocalDate birth;
-	
-	@Column(name = "gender", length = 100, nullable = false)
-	private String gender;
-	
-	@Column(name = "address", length = 100, nullable = false)
-	private String address;
-	
-	@Column(name = "document", length = 100, nullable = false)
-	private String document;
-	
-	@ManyToOne(fetch = FetchType.EAGER, optional = false)
+public class Person extends ABaseEntity {
+    
+    @Column(name = "first_name", length = 50, nullable = false)
+    private String firstName;
+    
+    @Column(name = "last_name", length = 50, nullable = false)
+    private String lastName;
+    
+    @Column(name = "email", length = 50, nullable = false, unique = true)
+    private String email;
+    
+    @Column(name = "phone", length = 15, nullable = false)
+    private String phone;
+    
+    @Column(name = "date_of_birth", nullable = false)
+    private LocalDate dateOfBirth;
+    
+    @Column(name = "gender", length = 10, nullable = false)
+    private String gender;
+    
+    @Column(name = "address", length = 100, nullable = false)
+    private String address;
+    
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
 	@JoinColumn(name = "city_id", nullable = false)
-	private City city;
+    private City city;
+    
+    @Column(name = "type_document", length = 50, nullable = false)
+    private String typeDocument;
+    
+    @Column(name = "document", length = 10, nullable = false, unique=true)
+    private String Document;
 
-	public String getName() {
-		return name;
+	public City getCity() {
+		return city;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+
+
+
+	public void setCity(City city) {
+		this.city = city;
+	}
+
+
+
+
+	public String getFirstName() {
+		return firstName;
+	}
+	
+
+	
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 
 	public String getEmail() {
@@ -61,12 +93,12 @@ public class Person extends ABaseEntity{
 		this.phone = phone;
 	}
 
-	public LocalDate getBirth() {
-		return birth;
+	public LocalDate getDateOfBirth() {
+		return dateOfBirth;
 	}
 
-	public void setBirth(LocalDate birth) {
-		this.birth = birth;
+	public void setDateOfBirth(LocalDate dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
 	}
 
 	public String getGender() {
@@ -85,24 +117,33 @@ public class Person extends ABaseEntity{
 		this.address = address;
 	}
 
-	public String getDocument() {
-		return document;
+
+
+
+	public String getTypeDocument() {
+		return typeDocument;
 	}
+
+
+
+
+	public void setTypeDocument(String typeDocument) {
+		this.typeDocument = typeDocument;
+	}
+
+
+
+
+	public String getDocument() {
+		return Document;
+	}
+
+
+
 
 	public void setDocument(String document) {
-		this.document = document;
-	}
-
-	public City getCity() {
-		return city;
-	}
-
-	public void setCity(City city) {
-		this.city = city;
-	}
+		Document = document;
+	}  
 	
 	
-	
-	
-	 
 }

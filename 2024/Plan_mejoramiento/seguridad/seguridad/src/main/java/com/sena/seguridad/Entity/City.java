@@ -1,5 +1,6 @@
 package com.sena.seguridad.Entity;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -8,15 +9,17 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "city")
-public class City extends ABaseEntity {
+@Table (name = "city")
+public class City extends ABaseEntity{
 	@Column(name = "name", length = 50, nullable = false)
-	private String name;
+    private String name;
+    
+    @Column(name = "code", length = 50, nullable = false)
+    private String code;
+	   
 
-	@Column(name = "code", length = 50, nullable = false)
-	private String code;
 
-	public String getName() {
+		public String getName() {
 		return name;
 	}
 
@@ -32,16 +35,20 @@ public class City extends ABaseEntity {
 		this.code = code;
 	}
 
-	@ManyToOne(fetch = FetchType.EAGER, optional = false)
-	@JoinColumn(name = "department_id", nullable = false)
-	private Department department;
+		@ManyToOne(fetch = FetchType.EAGER, optional = false)
+	    @JoinColumn(name = "department_id", nullable = false)
+	    private Department department;
 
-	public Department getDepartment() {
-		return department;
-	}
+		public Department getDepartment() {
+			return department;
+		}
 
-	public void setDepartment(Department department) {
-		this.department = department;
-	}
+		public void setDepartment(Department department) {
+			this.department = department;
+		}
+	
+
+
+
 
 }
