@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- Script -->
+    <script src='../js/Producto.js'></script>
+    <link rel="stylesheet" href="../style/Producto.css">
+    <!-- jQuery UI -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="input">
+            <a href="Cliente.html" class="value">
+                <button class="value">
+                    <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path d="m1.5 13v1a.5.5 0 0 0 .3379.4731 18.9718 18.9718 0 0 0 6.1621 1.0269 18.9629 18.9629 0 0 0 6.1621-1.0269.5.5 0 0 0 .3379-.4731v-1a6.5083 6.5083 0 0 0 -4.461-6.1676 3.5 3.5 0 1 0 -4.078 0 6.5083 6.5083 0 0 0 -4.461 6.1676zm4-9a2.5 2.5 0 1 1 2.5 2.5 2.5026 2.5026 0 0 1 -2.5-2.5zm2.5 3.5a5.5066 5.5066 0 0 1 5.5 5.5v.6392a18.08 18.08 0 0 1 -11 0v-.6392a5.5066 5.5066 0 0 1 5.5-5.5z" fill="#7D8590"></path>
+                    </svg>
+                    Cliente
+                </button>
+            </a>
+                    <button class="value" id="productosButton">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                            <path fill="none" d="M17.671,13.945l0.003,0.002l1.708-7.687l-0.008-0.002c0.008-0.033,0.021-0.065,0.021-0.102c0-0.236-0.191-0.428-0.427-0.428H5.276L4.67,3.472L4.665,3.473c-0.053-0.175-0.21-0.306-0.403-0.306H1.032c-0.236,0-0.427,0.191-0.427,0.427c0,0.236,0.191,0.428,0.427,0.428h2.902l2.667,9.945l0,0c0.037,0.119,0.125,0.217,0.239,0.268c-0.16,0.26-0.257,0.562-0.257,0.891c0,0.943,0.765,1.707,1.708,1.707S10,16.068,10,15.125c0-0.312-0.09-0.602-0.237-0.855h4.744c-0.146,0.254-0.237,0.543-0.237,0.855c0,0.943,0.766,1.707,1.708,1.707c0.944,0,1.709-0.764,1.709-1.707c0-0.328-0.097-0.631-0.257-0.891C17.55,14.182,17.639,14.074,17.671,13.945 M15.934,6.583h2.502l-0.38,1.709h-2.312L15.934,6.583zM5.505,6.583h2.832l0.189,1.709H5.963L5.505,6.583z M6.65,10.854L6.192,9.146h2.429l0.19,1.708H6.65z M6.879,11.707h2.027l0.189,1.709H7.338L6.879,11.707z M8.292,15.979c-0.472,0-0.854-0.383-0.854-0.854c0-0.473,0.382-0.855,0.854-0.855s0.854,0.383,0.854,0.855C9.146,15.596,8.763,15.979,8.292,15.979 M11.708,13.416H9.955l-0.189-1.709h1.943V13.416z M11.708,10.854H9.67L9.48,9.146h2.228V10.854z M11.708,8.292H9.386l-0.19-1.709h2.512V8.292z M14.315,13.416h-1.753v-1.709h1.942L14.315,13.416zM14.6,10.854h-2.037V9.146h2.227L14.6,10.854z M14.884,8.292h-2.321V6.583h2.512L14.884,8.292z M15.978,15.979c-0.471,0-0.854-0.383-0.854-0.854c0-0.473,0.383-0.855,0.854-0.855c0.473,0,0.854,0.383,0.854,0.855C16.832,15.596,16.45,15.979,15.978,15.979 M16.917,13.416h-1.743l0.189-1.709h1.934L16.917,13.416z M15.458,10.854l0.19-1.708h2.218l-0.38,1.708H15.458z"></path>
+                        </svg>
+                        Productos
+                    </button>
+                    
+                    <a href="Ventas.html" class="value">
+                        <button class="value">
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path fill="none" d="M17.671,13.945l0.003,0.002l1.708-7.687l-0.008-0.002c0.008-0.033,0.021-0.065,0.021-0.102c0-0.236-0.191-0.428-0.427-0.428H5.276L4.67,3.472L4.665,3.473c-0.053-0.175-0.21-0.306-0.403-0.306H1.032c-0.236,0-0.427,0.191-0.427,0.427c0,0.236,0.191,0.428,0.427,0.428h2.902l2.667,9.945l0,0c0.037,0.119,0.125,0.217,0.239,0.268c-0.16,0.26-0.257,0.562-0.257,0.891c0,0.943,0.765,1.707,1.708,1.707S10,16.068,10,15.125c0-0.312-0.09-0.602-0.237-0.855h4.744c-0.146,0.254-0.237,0.543-0.237,0.855c0,0.943,0.766,1.707,1.708,1.707c0.944,0,1.709-0.764,1.709-1.707c0-0.328-0.097-0.631-0.257-0.891C17.55,14.182,17.639,14.074,17.671,13.945 M15.934,6.583h2.502l-0.38,1.709h-2.312L15.934,6.583zM5.505,6.583h2.832l0.189,1.709H5.963L5.505,6.583z M6.65,10.854L6.192,9.146h2.429l0.19,1.708H6.65z M6.879,11.707h2.027l0.189,1.709H7.338L6.879,11.707z M8.292,15.979c-0.472,0-0.854-0.383-0.854-0.854c0-0.473,0.382-0.855,0.854-0.855s0.854,0.383,0.854,0.855C9.146,15.596,8.763,15.979,8.292,15.979 M11.708,13.416H9.955l-0.189-1.709h1.943V13.416z M11.708,10.854H9.67L9.48,9.146h2.228V10.854z M11.708,8.292H9.386l-0.19-1.709h2.512V8.292z M14.315,13.416h-1.753v-1.709h1.942L14.315,13.416zM14.6,10.854h-2.037V9.146h2.227L14.6,10.854z M14.884,8.292h-2.321V6.583h2.512L14.884,8.292z M15.978,15.979c-0.471,0-0.854-0.383-0.854-0.854c0-0.473,0.383-0.855,0.854-0.855c0.473,0,0.854,0.383,0.854,0.855C16.832,15.596,16.45,15.979,15.978,15.979 M16.917,13.416h-1.743l0.189-1.709h1.934L16.917,13.416z M15.458,10.854l0.19-1.708h2.218l-0.38,1.708H15.458z"></path>
+                            </svg>
+                            Ventas
+                        </button>
+                    </a>
+        </div>
+        <div id="inputData">
+            <form>
+                <fieldset>
+                    <legend>AGREGAR PRODUCTOS</legend>
+                    <div class="filters">   
+                        <div class="filter-item">
+                            <label for="nombre" class="block text-gray-800 font-semibold text-sm">Nombre del producto</label>
+                            <input type="text" name="nombre" id="nombre">
+                            <input type="hidden" name="id" id="id" value="">
+                            
+                        </div>
+                        <div class="filter-item">
+                            <label for="descripcion" class="block text-gray-800 font-semibold text-sm">Descripcion</label>
+                            <input type="text" name="descripcion" id="descripcion">
+                        </div>
+                        <div class="filter-item">
+                            <label for="cantidad" class="block text-gray-800 font-semibold text-sm">Cantidad</label>
+                            <input type="text" name="cantidad" id="cantidad">
+                        </div>
+                        <div class="filter-item">
+                            <label for="precio" class="block text-gray-800 font-semibold text-sm">Precio</label>
+                            <input type="text" name="precio" id="precio">
+                        </div>
+                        <div class="filter-item">
+                            <label for="iva" class="block text-gray-800 font-semibold text-sm">Iva</label>
+                            <input type="text" name="iva" id="iva">
+                        </div>
+                        <div class="filter-item">
+                            <label for="descuento" class="block text-gray-800 font-semibold text-sm">Descuento</label>
+                            <input type="text" name="descuento" id="descuento">
+                        </div>
+                        <div class="filter-item">
+                            <label for="state" class="block text-gray-800 font-semibold text-sm">Estado</label>
+                            <select id="state">
+                                <option selected>--Seleccione--</option>
+                                <option value="1">ACTIVO</option>
+                                <option value="0">INACTIVO</option>
+                            </select>
+                      </div>
+
+                      
+                    </div>
+                    <div class="filter-item">
+                        <div id="buttonData">
+                            <div class="agregar-btn">
+                                <button type="button" id="btnAgregar" name="btnAgregar" class="btn-agregar" onclick="save()">Agregar</button>
+                                <button type="button" id="btnLoadData" name="btnLoadData" class="btn-agregar-modal" data-bs-toggle="modal" data-bs-target="#staticBackdropTable">Filtro</button>
+                              </div>
+                            </div>
+                </div>
+                    </div>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="modal fade" id="staticBackdropTable" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">INFORMACION</h1>
+                        <button type="button" class="btn-close" style="background-color: red;" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="filter-item">
+                                <label for="nombreFiltro" class="block text-gray-800 font-semibold text-sm">filtrar por nombre</label>
+                                <input type="text" name="nombreFiltro" id="nombreFiltro">
+                            </div>
+    
+                            <div class="filter-item">
+                                <div id="buttonData">
+                                    <div class="agregar-btn">
+                                        <button type="button" id="btnFiltrar" name="btnFiltrar" class="btn-agregar" onclick="filtrar()">Filtrar</button>
+                                        <button type="button" id="btnLimpiarFiltrar" name="btnLimpiarFiltrar" class="btn-limpiar" onclick="loadData()">Limpiar filtro</button>
+                                      </div>
+                                    </div>
+                        </div>
+                            <div id="outputData">
+                                <br>
+                                <thead>
+                                <table class="table table-hover">
+                                    <tr class="table-dark">
+                                        <th>nombre</th>
+                                        <th>Descripcion</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio</th>
+                                        <th>Iva</th>
+                                        <th>Descuento</th>
+                                        <th>State</th>
+                                        <th colspan="2">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="resultData">
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <script>
+
+    loadData();
+    loadCity();
+    $(document).ready(function() {
+      $('.btn').click(function() {
+          $('#staticBackdrop').modal('show');
+      });
+  });
+
+  $(document).ready(function() {
+    $('.btnAgregarPerson').click(function() {
+        $('#staticBackdropTable').modal('show');
+    });
+});4
+
+
+  </script>
+  
+</body>
+</html>
